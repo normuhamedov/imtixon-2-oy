@@ -1,0 +1,52 @@
+.scooter {
+    
+    &__container {
+        background-image: url("../../images/scooter.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 1440px;
+        min-height: 650px;
+        @media only screen and (max-width: 800px) {
+            width: 768px;
+        }
+        
+    }
+    
+    &__wrapper {
+        padding: 100px 775px 152px 165px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        background-image: url("./../../images/chiziq.svg"),url("../../images/strelka.svg");
+        background-repeat: no-repeat;
+        background-position: left 233px , right 105px bottom 200px;
+    }
+    
+    &__heading {
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+        width: 500px;
+        margin: 0 auto;
+        
+    }
+    
+    &__text-wrapper {
+        margin: 0 auto;
+    }
+    
+    &__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        width: 405px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+}
+.button {
+}

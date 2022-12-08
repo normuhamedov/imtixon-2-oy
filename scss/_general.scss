@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 *,
@@ -23,4 +24,14 @@ body {
 
 main {
     flex-grow: 1;
+}
+
+ul,ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
