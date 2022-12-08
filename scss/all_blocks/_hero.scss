@@ -9,8 +9,11 @@
     &__left {
         max-width: 445px;
         width: 100%;
+        @media only screen and (max-width: 900px) {
+            
+        }
     }
-
+    
     &__heading {
         font-family: 'Space Mono';
         font-size: 48px;
@@ -19,23 +22,32 @@
         color: #495567;
         margin: 0;
         margin-bottom: 24px;
-
+        @media only screen and (max-width: 900px) {
+            text-align: center;
+        }
     }
-
+    
     &__text {
         font-size: 15px;
         line-height: 25px;
         color: #939CAA;
         margin: 0;
         margin-bottom: 40px;
+        @media only screen and (max-width: 900px) {
+            text-align: center;
+        }
     }
-
+    
     &__btn {
     }
-
+    
+   
     &__right {
         position: relative;
-        
+        @media only screen and (max-width: 900px) {
+            
+            
+        }
         &::before {
             position: absolute;
             top: 0;
@@ -65,7 +77,14 @@
         }
     }
     
-    &_wrapper {
+    &__wrapper {
+
+        @media only screen and (max-width: 900px) {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column-reverse;
+        }
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -114,5 +133,14 @@
         border: 3px solid #FCB72B;
         color: #FCB72B;
         transition: all 0.4s ease;
+    }
+}
+
+
+.hero__coming {
+    @media only screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

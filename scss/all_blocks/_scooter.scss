@@ -6,8 +6,14 @@
         background-repeat: no-repeat;
         max-width: 1440px;
         min-height: 650px;
-        @media only screen and (max-width: 800px) {
-            width: 768px;
+        @media only screen and (max-width: 900px) {
+            background-image: url("../../images/768-scooter.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 768px;
+        }
+        @media only screen and (max-width: 600px) {
+            background: none;
         }
         
     }
@@ -21,6 +27,35 @@
         background-image: url("./../../images/chiziq.svg"),url("../../images/strelka.svg");
         background-repeat: no-repeat;
         background-position: left 233px , right 105px bottom 200px;
+        @media only screen and (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 137px 98px 217px 97px;
+            background-image: none;
+        }
+        @media only screen and (max-width: 600px) {
+            max-width: 600px;
+        }
+        
+    }
+    
+    &__rv {
+        @media only screen and (max-width: 900px) {
+            background-image: url("../../images/strelka.svg");
+            background-position: left -100px bottom 100px;
+        }
+    }
+    
+    &__rv600 {
+        @media only screen and (max-width: 600px) {
+            background-image: url("../../images/600-scooter.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            max-width: 600px;
+        }
+        
     }
     
     &__heading {
@@ -29,11 +64,30 @@
         color: #FFFFFF;
         width: 500px;
         margin: 0 auto;
-        
+        @media only screen and (max-width: 900px) {
+            text-align: center;
+            width: 573px;
+            height: 112px;
+            background-image: none;
+        }
+        @media only screen and (max-width: 600px) {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -1.78571px;
+            width: 311px;
+            height: 120px;
+        }
     }
     
     &__text-wrapper {
         margin: 0 auto;
+        @media only screen and (max-width: 900px) {
+            text-align: center;
+        }
     }
     
     &__text {
@@ -46,6 +100,15 @@
         width: 405px;
         height: 100px;
         margin-bottom: 40px;
+        @media only screen and (max-width: 900px) {
+            text-align: center;
+            width: 573px;
+            height: 75px;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 311px;
+            height: 125px;
+        }
     }
 }
 .button {
